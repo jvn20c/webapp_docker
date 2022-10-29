@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% block body %}
+<center>
+<h2>{{ the_title }}</h2>
+
+
+<p>As informações que você inseriu no formulário:</p>
+<table>
+<tr><td>Frase digitada:</td><td>{{ the_phrase }}</td></tr>
+<tr><td>Letras a serem procuradas:</td><td>{{ the_letters }}</td></tr>
+</table>
+
+<p>Na frase: "{{ the_phrase }}" você procurou pelas letras "{{ the_letters }}", e isto foi o que encontramos:</p>
+<h3>{{ the_results }}</h3></center>
+{% endblock %}

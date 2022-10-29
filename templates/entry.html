@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% block body %}
+<h2>{{ the_title }}</h2>
+
+<form action='/search4' method='POST'>
+<table>
+<p>Use este formulário para escrever uma frase e descobrir a quantidade de letras específicas existentes na mesma:</p>
+<tr><td>Frase:</td><td><input name='phrase' type='TEXT' width='60'></td></tr>
+<tr><td>Letras a serem procuradas:</td><td><input name='letters' type='TEXT' value='aeiou'></td></tr>
+</table>
+<p>Depois de digitado..</p>
+<p><input type='SUBMIT' value='Procurar'></p>
+</form>
+
+{% endblock %}
